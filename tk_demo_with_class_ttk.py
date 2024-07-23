@@ -89,6 +89,7 @@ class WindowTwo(tk.Toplevel):
         self._btn_get_data.place(x=0, y=self._data_entry.winfo_height()+5)
         self.update() # we need to inform TK to draw what it has so we can get the control measurements
         self._btn_close.place(x=self._btn_get_data.winfo_width()+10, y=self._btn_get_data.winfo_y())
+        self.update()
 
     def get_data(self) -> None:
         """
