@@ -48,6 +48,7 @@ class WindowOne(tk.Tk):
             command=self.btn_new_window_on_click)
         self.update()
         self._btn_new_window.place(x=0, y=self._btn_img.winfo_height()+10)
+        self.update()
 
     def btn_new_window_on_click(self) -> None:
         """
