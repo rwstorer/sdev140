@@ -82,7 +82,8 @@ class WindowTwo(tk.Toplevel):
         self.title('Second Window')
         self.geometry('320x240')
         # Things outside of this class do not need access to these variables
-        self._data_entry: ttk.Entry = ttk.Entry(self, width=50, bg='blue', fg='yellow')
+        #self._data_entry: ttk.Entry = ttk.Entry(self, width=50, bg='blue', fg='yellow')
+        self._data_entry: ttk.Entry = ttk.Entry(self, width=50)
         self._data_entry.place(x=0, y=0)
         self._btn_get_data: ttk.Button = ttk.Button(self, text='Get Data', command=self.get_data)
         self._btn_close: ttk.Button = ttk.Button(self, text='Close', command=self.destroy)
